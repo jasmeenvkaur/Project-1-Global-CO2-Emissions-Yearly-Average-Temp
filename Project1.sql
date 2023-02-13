@@ -48,13 +48,13 @@ FROM [Emissions By Country]
 GROUP BY Year
 ORDER BY Year
 
---8 Average Per Capita over the years? Using WINDOWS Function--
+--8 Running Sum of Per Capita over the years? Using WINDOWS Function--
 SELECT Country, Year, Total, Coal, Oil, Gas, Per_Capita,
 SUM(Per_Capita) OVER (PARTITION BY Country ORDER BY Year) AS RunningTotalPerCapita
 FROM [Emissions By Country]
 
 --9 Running Sum of Total Emissions over the years? Using WINDOWS Function--
----SELECT Country, Year, Coal, Oil, Gas, Per_Capita, Total,
+SELECT Country, Year, Coal, Oil, Gas, Per_Capita, Total,
 SUM(Total) OVER (PARTITION BY Country ORDER BY Year) AS RunningTotal
 FROM [Emissions By Country]
 
