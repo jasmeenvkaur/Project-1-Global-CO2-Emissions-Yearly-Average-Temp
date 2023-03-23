@@ -5,3 +5,5 @@ Conducted exploratory analysis on CO2 emissions for the United States and global
 https://hbr.org/2021/10/carbon-might-be-your-companys-biggest-financial-liability 
 
 https://knowledge.wharton.upenn.edu/article/companies-can-profit-carbon-reduction/
+
+https://www.iea.org/reports/global-energy-review-2021/co2-emissions
